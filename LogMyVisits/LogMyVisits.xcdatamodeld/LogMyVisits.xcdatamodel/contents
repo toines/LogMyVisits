@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Adres" representedClassName="Adres" syncable="YES" codeGenerationType="class">
+        <attribute name="confirmed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="landcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="naam" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provincie" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="soortPlaats" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stad" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="straatHuisnummer" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bezocht" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bezoek" inverseName="metAdres" inverseEntity="Bezoek" syncable="YES"/>
+    </entity>
+    <entity name="Bezoek" representedClassName="Bezoek" syncable="YES" codeGenerationType="class">
+        <attribute name="arrival_1970" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="departure_1970" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="metAdres" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Adres" inverseName="bezocht" inverseEntity="Adres" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Adres" positionX="-63" positionY="-18" width="128" height="225"/>
+        <element name="Bezoek" positionX="-477" positionY="-9" width="128" height="133"/>
+    </elements>
+</model>
