@@ -16,12 +16,12 @@
 		CF96BA7721133CC30096B1F0 /* bezoekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96BA7621133CC30096B1F0 /* bezoekVC.swift */; };
 		CF96BA7921133F9C0096B1F0 /* handigeAlgemeneFunctiesExtensies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96BA7821133F9C0096B1F0 /* handigeAlgemeneFunctiesExtensies.swift */; };
 		CF96BA9C2115C62E0096B1F0 /* LokaleFuncties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF96BA9B2115C62E0096B1F0 /* LokaleFuncties.swift */; };
-		CFAC3A95211ECAC400A6B2FE /* MaandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC3A91211ECAC200A6B2FE /* MaandCell.swift */; };
 		CFAC3A96211ECAC400A6B2FE /* DagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC3A92211ECAC300A6B2FE /* DagCell.swift */; };
 		CFAC3A97211ECAC400A6B2FE /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC3A93211ECAC300A6B2FE /* HeaderCell.swift */; };
 		CFAC3A98211ECAC400A6B2FE /* VisiteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC3A94211ECAC400A6B2FE /* VisiteCell.swift */; };
 		CFAC3A9A211ECB6200A6B2FE /* CellTabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC3A99211ECB6200A6B2FE /* CellTabel.swift */; };
 		CFAC3A9C211ED5C500A6B2FE /* kaartFuncties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC3A9B211ED5C500A6B2FE /* kaartFuncties.swift */; };
+		CFC4462B21514EB800A13897 /* MaandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4462A21514EB800A13897 /* MaandCell.swift */; };
 		CFC80DE3211CB7F9005BD2BD /* visites.json in Resources */ = {isa = PBXBuildFile; fileRef = CFC80DE2211CB7F9005BD2BD /* visites.json */; };
 		CFE42D6D21178CB2008EACA2 /* FileInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE42D6C21178CB2008EACA2 /* FileInput.swift */; };
 /* End PBXBuildFile section */
@@ -38,12 +38,12 @@
 		CF96BA7621133CC30096B1F0 /* bezoekVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bezoekVC.swift; sourceTree = "<group>"; };
 		CF96BA7821133F9C0096B1F0 /* handigeAlgemeneFunctiesExtensies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handigeAlgemeneFunctiesExtensies.swift; sourceTree = "<group>"; };
 		CF96BA9B2115C62E0096B1F0 /* LokaleFuncties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LokaleFuncties.swift; sourceTree = "<group>"; };
-		CFAC3A91211ECAC200A6B2FE /* MaandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MaandCell.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/Programmeren/LogMyWay/LogMyWay/MaandCell.swift"; sourceTree = "<group>"; };
 		CFAC3A92211ECAC300A6B2FE /* DagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DagCell.swift; sourceTree = "<group>"; };
 		CFAC3A93211ECAC300A6B2FE /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		CFAC3A94211ECAC400A6B2FE /* VisiteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisiteCell.swift; sourceTree = "<group>"; };
 		CFAC3A99211ECB6200A6B2FE /* CellTabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellTabel.swift; sourceTree = "<group>"; };
 		CFAC3A9B211ED5C500A6B2FE /* kaartFuncties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kaartFuncties.swift; sourceTree = "<group>"; };
+		CFC4462A21514EB800A13897 /* MaandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaandCell.swift; sourceTree = "<group>"; };
 		CFC80DE2211CB7F9005BD2BD /* visites.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = visites.json; sourceTree = "<group>"; };
 		CFE42D6C21178CB2008EACA2 /* FileInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +85,8 @@
 				CF96BA9B2115C62E0096B1F0 /* LokaleFuncties.swift */,
 				CFAC3A92211ECAC300A6B2FE /* DagCell.swift */,
 				CFAC3A93211ECAC300A6B2FE /* HeaderCell.swift */,
-				CFAC3A91211ECAC200A6B2FE /* MaandCell.swift */,
 				CFAC3A94211ECAC400A6B2FE /* VisiteCell.swift */,
+				CFC4462A21514EB800A13897 /* MaandCell.swift */,
 				CFAC3A99211ECB6200A6B2FE /* CellTabel.swift */,
 				CFAC3A9B211ED5C500A6B2FE /* kaartFuncties.swift */,
 				CF96BA5B21132C930096B1F0 /* Main.storyboard */,
@@ -132,6 +132,7 @@
 				TargetAttributes = {
 					CF96BA5321132C930096B1F0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -181,11 +182,11 @@
 				CF96BA7721133CC30096B1F0 /* bezoekVC.swift in Sources */,
 				CFAC3A9C211ED5C500A6B2FE /* kaartFuncties.swift in Sources */,
 				CF96BA7921133F9C0096B1F0 /* handigeAlgemeneFunctiesExtensies.swift in Sources */,
-				CFAC3A95211ECAC400A6B2FE /* MaandCell.swift in Sources */,
 				CFAC3A9A211ECB6200A6B2FE /* CellTabel.swift in Sources */,
 				CFAC3A97211ECAC400A6B2FE /* HeaderCell.swift in Sources */,
 				CF96BA6021132C930096B1F0 /* LogMyVisits.xcdatamodeld in Sources */,
 				CF96BA5821132C930096B1F0 /* AppDelegate.swift in Sources */,
+				CFC4462B21514EB800A13897 /* MaandCell.swift in Sources */,
 				CFAC3A98211ECAC400A6B2FE /* VisiteCell.swift in Sources */,
 				CFAC3A96211ECAC400A6B2FE /* DagCell.swift in Sources */,
 				CFE42D6D21178CB2008EACA2 /* FileInput.swift in Sources */,
@@ -346,7 +347,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.Schnabel.LogMyVisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -368,7 +369,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.Schnabel.LogMyVisits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

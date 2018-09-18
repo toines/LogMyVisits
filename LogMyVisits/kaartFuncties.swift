@@ -116,7 +116,7 @@ func mapBezoeken(datums_1970:[(kaartData)],_ kaart:MKMapView)
 func mapRoutesAndAdressen(newRoute:[CLLocation],  _ kaart:MKMapView){
     print ("route \(newRoute.count)")
     // remove old routes in teMappenRoutes
-    kaart.remove(teMappenRoutes)
+    kaart.removeOverlay(teMappenRoutes)
     // add newRoute
     var coord = [CLLocationCoordinate2D]()
 //    var vorigeLocation : CLLocation?
@@ -140,7 +140,7 @@ func mapRoutesAndAdressen(newRoute:[CLLocation],  _ kaart:MKMapView){
     teMappenRoutes = MyPolyline(coordinates:&coord,count:coord.count)
     print ("-- einde mapRoutesAndAdressen voor \(coord.count) coordinaten")
     for x in coord { print ("\(x)") }
-    kaart.add(teMappenRoutes)
+    kaart.addOverlay(teMappenRoutes)
 }
 var teMappenRoutes = MyPolyline()
 var teMappenAdressen = Array<Adres>()

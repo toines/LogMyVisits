@@ -81,8 +81,8 @@ extension bezoekVC{
         //    if !(UIDevice.current.isBatteryMonitoringEnabled){UIDevice.current.isBatteryMonitoringEnabled = true}
         Foreground()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.Foreground), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(self.Background), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.Foreground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.Background), name: UIApplication.didEnterBackgroundNotification, object: nil)
         //    NotificationCenter.default.addObserver(self, selector: #selector(visiteVC.startZoekLocatieBijContacten),name:NSNotification.Name("zoekLocatieBijContacten"), object: nil)
         //    NotificationCenter.default.addObserver(self, selector: #selector(visiteVC.loadList(_:)),name:NSNotification.Name(rawValue: "load"), object: nil)
         //    NotificationCenter.default.addObserver(self, selector: #selector(visiteVC.updateKaart),name:NSNotification.Name("MAP"), object: nil)
@@ -173,9 +173,9 @@ extension bezoekVC{
         }
         tableView.beginUpdates()
         if delta < 0
-        {tableView.deleteRows(at: deltaIdxPath, with: UITableViewRowAnimation.fade)}
+        {tableView.deleteRows(at: deltaIdxPath, with: UITableView.RowAnimation.fade)}
         else
-        {tableView.insertRows(at: deltaIdxPath, with: UITableViewRowAnimation.fade)}
+        {tableView.insertRows(at: deltaIdxPath, with: UITableView.RowAnimation.fade)}
         tableView.endUpdates()
         
         
@@ -425,7 +425,7 @@ extension String{
         UIColor.clear.set()
         let rect = CGRect(x:0,y:0 ,width:size.width,height:size.height)
         UIRectFill(rect)
-        (self as NSString).draw(in: rect, withAttributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: CGFloat(ofSize * 0.8))])
+        (self as NSString).draw(in: rect, withAttributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: CGFloat(ofSize * 0.8))])
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
